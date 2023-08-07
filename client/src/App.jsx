@@ -5,7 +5,6 @@ import { useSelector } from 'react-redux';
 import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
 import { themeSettings } from './theme';
 import Dashboard from './scenes/dashboard';
-import Layout from './scenes/Layout';
 import Products from './scenes/products';
 import Customers from './scenes/customers';
 import Transactions from './scenes/transactions';
@@ -16,6 +15,7 @@ import Monthly from './scenes/monthly';
 import Breakdown from './scenes/breakdown';
 import Admin from './scenes/admin';
 import Performance from './scenes/performance';
+import Layout from './scenes/Layout';
 
 function App() {
   const mode = useSelector((state) => state.global.mode);
