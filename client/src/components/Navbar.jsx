@@ -22,7 +22,7 @@ import {
 import FlexBetween from './FlexBetween';
 import { useDispatch } from 'react-redux';
 import { setMode } from '../state';
-import profileImage from '../assets/profile.jpeg';
+import profileImage from '../assets/profile.jpg';
 
 const Navbar = ({ user, isSidebarOpen, setIsSidebarOpen }) => {
   const dispatch = useDispatch();
@@ -43,7 +43,10 @@ const Navbar = ({ user, isSidebarOpen, setIsSidebarOpen }) => {
       <Toolbar sx={{ justifyContent: 'space-between' }}>
         {/* LEFT SIDE */}
         <FlexBetween>
-          <IconButton onClick={() => setIsSidebarOpen(!isSidebarOpen)}>
+          <IconButton
+            sx={{ mr: '2rem' }}
+            onClick={() => setIsSidebarOpen(!isSidebarOpen)}
+          >
             <MenuIcon />
           </IconButton>
           <FlexBetween
@@ -88,8 +91,8 @@ const Navbar = ({ user, isSidebarOpen, setIsSidebarOpen }) => {
                 component='img'
                 alt='profile'
                 src={profileImage}
-                height='32px'
-                width='32px'
+                height='55px'
+                width='55px'
                 borderRadius='50%'
                 sx={{ objectFit: 'cover' }}
               />
