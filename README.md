@@ -3,4 +3,4 @@ For frontend it uses React, Material UI, Material UI Data Grid, Nivo Charts, Red
 
 It might take a little bit long to get the data from the database the first time you load the app because of Render.com policy.
 
-Demo: https://mern-app-kqlg.onrender.com/dashboard
+Demo: https://mern-app-kqlg.onrender.com/
